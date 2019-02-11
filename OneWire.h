@@ -69,6 +69,7 @@ class OneWire
 #endif
 
   public:
+    OneWire() {} // Needed for virtualization, eg DS2482
     OneWire(uint8_t pin) { begin(pin); }
     void begin(uint8_t pin);
 
